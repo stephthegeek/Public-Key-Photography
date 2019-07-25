@@ -1,0 +1,346 @@
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Pixel Operator', monospace;
+  font-size: 1em;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+    font-family: 'Pixel Operator Bold';
+    src: url('fonts/pixeloperator-bold-webfont.woff2') format('woff2'),
+         url('fonts/pixeloperator-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pixel Operator';
+    src: url('fonts/pixeloperator-webfont.woff2') format('woff2'),
+         url('fonts/pixeloperator-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Dolly Dots';
+    src: url('fonts/dollydots.eot');
+    src: url('fonts/dollydots.eot?#iefix') format('embedded-opentype'),
+         url('fonts/dollydots.woff2') format('woff2'),
+         url('fonts/dollydots.woff') format('woff'),
+         url('fonts/dollydots.ttf')  format('truetype'),
+         url('fonts/dollydots.svg#Dolly Dots') format('svg');
+}
+
+a:link,
+a:visited {
+  border-bottom: 1px solid rgba(0, 0, 0, 1);
+  color: rgba(0, 0, 0, 1);
+  text-decoration: none;
+}
+
+a:hover,
+a:active {
+  border-bottom: 0;
+  color: rgba(0, 0, 0, 1);
+  text-decoration: none;
+}
+
+.page-wrapper {
+  background-image: url('images/photobooth-glasses.jpg');
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 2500px;
+  position: absolute;
+  width: 100%;
+}
+
+.keyhole-outer {
+  left: 50%;
+  margin-left: -270px;
+  position: absolute;
+  width: 540px;
+}
+
+.navbar {
+  left: 50%;
+  position: absolute;
+  top: 190px;
+  margin-left: -290px;
+  z-index: 200;
+}
+
+.keyhole-inner a:link,
+.keyhole-inner a:visited,
+.keyhole-inner p,
+.keyhole-inner ul {
+  color: rgba(255, 255, 255, 1);
+}
+
+.keyhole-inner a:link,
+.keyhole-inner a:visited {
+  border-bottom: 4px solid rgba(176, 0, 255, 1);
+}
+
+.keyhole-inner a:hover,
+.keyhole-inner a:active {
+  border-bottom-color: rgba(176, 0, 255, 0.7);
+  color: rgba(255, 255, 255, 1);
+}
+
+.keyhole-inner a:hover,
+.keyhole-inner a:active {
+  transition: border 0.2s ease-in-out;
+}
+
+.keyhole-inner {
+  background-color: rgba(0, 0, 0, 1);
+  height: 700px;
+  left: 50%;
+  margin-left: -208px;
+  overflow: scroll;
+  padding: 90px 5px;
+  position: absolute;
+  text-align: center;
+  top: 100px;
+  width: 420px;
+}
+
+.keyhole-bg {
+  background-image: url('images/keyhole_sm.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 900px;
+  pointer-events: none; /* send mouse events beneath this layer */
+  position: absolute;
+  top: 95px;
+  width: 100%;
+  z-index: 100;
+}
+
+.keyhole-inner a:link .no-decoration,
+.keyhole-inner a:visited .no-decoration {
+  border-bottom: 0;
+}
+
+h1 {
+  font-family: 'Pixel Operator Bold', monospace;
+  font-size: 56px;
+  font-smooth: never;
+  -webkit-font-smoothing: none;
+  letter-spacing: -2px;
+  line-height: 90%;
+  margin: 15px auto;
+  text-align: center;
+}
+
+h5 {
+  font-family: 'Pixel Operator', monospace;
+  font-size: 18px;
+  font-weight: normal;
+  letter-spacing: normal;
+  margin-top: 0;
+  text-align: center;
+}
+
+.keyhole-inner h4 {
+  color: rgba(255, 255, 255, 1);
+}
+
+h2 {
+  background: linear-gradient(330deg, rgb(36,230,121) 0%, rgb(36,230,121) 30%, rgb(246,237,25) 60%, rgb(246,237,25) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  clear: both;
+  font-family: 'Dolly Dots', sans-serif;
+  font-size: 190%;
+  line-height: 120%;
+  font-weight: normal;
+  margin-bottom: 20px;
+  margin-top: 30px;
+  padding-top: 40px;
+  text-transform: uppercase;
+}
+
+h2:first-child {
+  padding-top: 0;
+}
+
+.keyhole-inner h3 {
+  /*background: linear-gradient(330deg, rgb(176,0,255) 10%, rgb(36,230,121) 50%, rgb(246,237,25) 90%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 2px 2px 0px rgba(255,255,255,1);*/
+  color: rgba(255, 255, 255, 1);
+  font-size: 180%;
+  line-height: 110%;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 80%;
+}
+
+h4 {
+  font-family: 'Pixel Operator Bold', monospace;
+  font-size: 160%;
+  margin-bottom: 5px;
+  letter-spacing: -1px;
+}
+
+p,
+ul {
+  font-size: 140%;
+  line-height: 110%;
+  margin-top: 5px;
+}
+
+img.inline {
+  max-width: 90%;
+}
+
+a.inline:link,
+a.inline:visited,
+a.inline:hover,
+a.inline:active {
+  border-bottom: 0;
+}
+
+a.inline:link img,
+a.inline:visited img {
+  border: 3px dotted rgb(246,237,25);
+}
+
+a.inline:hover img,
+a.inline:active img {
+  border: 3px solid rgb(246,237,25);
+  -webkit-transition: all 500ms ease;
+  -moz-transition: all 500ms ease;
+  -ms-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+
+img.inline.grid {
+  float: left;
+  margin-bottom: 10px;
+  width: 47%;
+}
+
+.grid-wrapper p:nth-child(odd) img.grid {
+  margin-right: 10px;
+}
+
+.sm-text {
+  color: rgba(90, 90, 90, 1);
+  font-size: 125%;
+}
+
+.tiny-text {
+  font-size: 80%;
+}
+
+ul {
+  list-style-type: square;
+  text-align: left;
+}
+
+ul li {
+  margin-bottom: 12px;
+  margin-top: 7px;
+}
+
+ul li ul {
+  opacity: 0.85;
+  font-size: 90%;
+  margin-bottom: 20px;
+}
+
+ul li ul li {
+  line-height: 80%;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar ul li a:link,
+.navbar ul li a:visited {
+  border-bottom: 0;
+}
+
+.navbar ul li.color-green a:hover img,
+.navbar ul li.color-green a:active img {
+  box-shadow: 8px 8px 0px rgba(36,230,121,1);
+  transition: box-shadow 0.1s ease-in-out;
+}
+
+.navbar ul li.color-purple a:hover img,
+.navbar ul li.color-purple a:active img {
+  box-shadow: 8px 8px 0px rgba(176,0,255,1);
+  transition: box-shadow 0.1s ease-in-out;
+}
+
+.navbar ul li.color-yellow a:hover img,
+.navbar ul li.color-yellow a:active img {
+  box-shadow: 8px 8px 0px rgba(246,237,25,1);
+  transition: box-shadow 0.1s ease-in-out;
+}
+
+.navbar ul li img {
+  height: 30px;
+  width: 30px;
+}
+
+a:link.not-yet,
+a:visited.not-yet {
+  text-decoration: line-through;
+}
+
+.dim {
+  opacity: 0.5;
+}
+
+
+@media(max-width: 800px) {
+  h1 {
+    font-size: 46px;
+  }
+  .navbar {
+    margin-left: -150px;
+    top: 120px;
+    z-index: 300;
+  }
+  .navbar ul li {
+    display: inline;
+    padding: 0 8px;
+  }
+  .keyhole-outer {
+    margin-left: -240px;
+    width: 480px;
+  }
+  .keyhole-inner {
+    height: 680px;
+    margin-left: -188px;
+    padding: 60px 10px 40px 10px;
+    top: 155px;
+    width: 360px;
+  }
+  img.inline.grid {
+    width: 46%;
+  }
+}
